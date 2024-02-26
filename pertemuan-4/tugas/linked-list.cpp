@@ -50,8 +50,29 @@ void cetakMahasiswa() {
 }
 
 int main() {
-    tambahMahasiswa("2304130045", "Fittra", "Teknik Informatika", 19);
-    tambahMahasiswaLagi("2304130044", "Iffad", "Teknik Informatika", 19);
-    hapusMahasiswa();
-    cetakMahasiswa();
+    string nim, nama, jurusan;
+    int umur, pilihan;
+    cout << "1. Tambah Mahasiswa" << endl;
+    cout << "2. Tambah Mahasiswa Lagi" << endl;
+    cout << "3. Hapus Mahasiswa" << endl;
+    cout << "4. Cetak Mahasiswa" << endl;
+    cout << "Masukkan Pilihan : ";
+    cin >> pilihan;
+
+    switch (pilihan) {
+        case 1:
+        cout << "NIM : ";
+        cin>>nim;
+        cout << "NAMA : ";
+        cin>>nama;
+        cout << "JURUSAN : ";
+        cin>>jurusan;
+        cout << "UMUR : ";
+        cin>>umur;
+
+        tambahMahasiswa(nim, nama, jurusan, umur);
+    
+        case 2:
+        cetakMahasiswa();
+    }
 }
