@@ -58,5 +58,5 @@ int main() {
   for(int i = 0; i < t; i++){
     cout << data[i] << " ";
   }
-  cout << endl;
+  cout << sizeof(data[0]) << sizeof(data);
 }
